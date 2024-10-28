@@ -1,0 +1,128 @@
+body {
+  background-color: #f0f4f8;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.ver-notas-container {
+  padding: 23px;
+  width: 111%;
+  max-width: 1059px;
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+  margin-top: -46px;
+  margin-left: 268px;
+  margin-right: 47px;
+  max-height: 87vh; /* Limitar la altura total del contenedor */
+  overflow-y: auto; /* Habilitar el scroll vertical */
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.table-container {
+  max-height: 400px; /* Altura máxima del contenedor */
+  overflow-y: auto; /* Habilita el scroll vertical */
+}
+
+.notas-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  background-color: #f9fafc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.notas-table th,
+.notas-table td {
+  padding: 15px;
+  text-align: center;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.notas-table th {
+  background-color: #00bfa5;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+.notas-table td {
+  background-color: #fff;
+}
+
+.notas-table tr:nth-child(even) td {
+  background-color: #f1f5f9;
+}
+
+.notas-table tr:hover td {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+.promedio-general {
+  margin-top: 10px;
+  font-size: 1.3em;
+  color: #333;
+  font-weight: 600;
+  text-align: right;
+}
+
+.promedio-general h4 {
+  color: #00bfa5;
+}
+
+@media (max-width: 768px) {
+  .ver-notas-container {
+    padding: 15px;
+    max-height: 70vh; /* Ajuste para pantallas pequeñas */
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .notas-table th,
+  .notas-table td {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  .promedio-general {
+    font-size: 1em;
+  }
+}

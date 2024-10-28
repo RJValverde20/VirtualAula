@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="student.css">
+    <title>Panel de Administración</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Panel de navegación -->
+        <nav class="sidebar">
+            <h2>Aula Virtual</h2>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li>Clases</li>
+                <li>Tareas</li>
+                <li>Calificaciones</li>
+                <li>Foro</li>
+                <li>Calendario</li>
+                <li>Recursos</li>
+                <li>Configuración</li>
+                <li><button id="logout-button">Cerrar</button></li>
+            </ul>
+        </nav>
+
+        <!-- Contenido Principal -->
+        <div class="main-content">
+            <!-- Sección de Aula Virtual -->
+            <section class="dashboard-section">
+                <div class="card">
+                    <i class="icon">📄</i>
+                    <h3>Clases</h3>
+                    <p>Accede a tus clases virtuales y participa activamente.</p>
+                </div>
+                <div class="card">
+                    <i class="icon">📝</i>
+                    <h3>Tareas</h3>
+                    <p>Revisa y entrega tus tareas asignadas.</p>
+                </div>
+                <div class="card">
+                    <i class="icon">🏅</i>
+                    <h3>Calificaciones</h3>
+                    <p>Consulta tus calificaciones y el progreso de tus estudios.</p>
+                </div>
+                <div class="card">
+                    <i class="icon">💬</i>
+                    <h3>Foro</h3>
+                    <p>Participa en discusiones y debates con tus compañeros.</p>
+                </div>
+                <div class="card">
+                    <i class="icon">📅</i>
+                    <h3>Calendario</h3>
+                    <p>Mantente al día con las fechas importantes de tu curso.</p>
+                </div>
+                <div class="card">
+                    <i class="icon">📚</i>
+                    <h3>Recursos</h3>
+                    <p>Accede a materiales de aprendizaje y recursos útiles.</p>
+                </div>
+            </section>
+
+            <!-- Sección de Configuración -->
+            <section class="settings-section">
+                <h2>Configuración</h2>
+                <div class="settings-container">
+                    <!-- Perfil -->
+                    <div class="settings-card">
+                        <h3>Perfil</h3>
+                        <p>Actualiza tu información personal.</p>
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" value="Estudiante">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" value="estudiante@example.com">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password">
+                        <button>Guardar cambios</button>
+                    </div>
+
+                    <!-- Notificaciones -->
+                    <div class="settings-card">
+                        <h3>Notificaciones</h3>
+                        <p>Configura tus preferencias de notificaciones.</p>
+                        <label><input type="checkbox" checked> Nuevas clases</label>
+                        <label><input type="checkbox" checked> Nuevas tareas</label>
+                        <label><input type="checkbox" checked> Actualizaciones de calificaciones</label>
+                        <label><input type="checkbox" checked> Nuevos posts en el foro</label>
+                        <button>Guardar cambios</button>
+                    </div>
+
+                   <!--  Seguridad 
+                    <div class="settings-card">
+                        <h3>Seguridad</h3>
+                        <p>Configura la seguridad de tu cuenta.</p>
+                        <label>Autenticación de dos factores</label>
+                        <input type="checkbox">
+                        <button>Cerrar sesiones</button>
+                        <button>Guardar cambios</button>
+                    </div> -->
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="student.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teacher.css">
+    <title>Panel de Profesor</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Panel de navegación -->
+        <nav class="sidebar">
+            <h2>Aula Virtual - Profesor</h2>
+            <ul>
+                <li><a href="#clases" onclick="mostrarVista('clases')">Clases Asignadas</a></li>
+                <li><a href="#subir-tareas" onclick="mostrarVista('subir-tareas')">Subir Tareas</a></li>
+                <li><a href="#estudiantes" onclick="mostrarVista('estudiantes')">Estudiantes</a></li>
+                <li><a href="#configuracion" onclick="mostrarVista('configuracion')">Configuración</a></li>
+                <li><button id="logout-button">Cerrar Sesión</button></li>
+            </ul>
+        </nav>
+
+        <!-- Contenido Principal -->
+        <div class="main-content">
+            <!-- Sección de Clases Asignadas -->
+            <section class="dashboard-section" id="clases">
+                <h2>Clases Asignadas</h2>
+                <div class="card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Clase</th>
+                                <th>Aula</th>
+                                <th>Estudiantes Matriculados</th>
+                            </tr>
+                        </thead>
+                        <tbody id="clases-asignadas">
+                            <!-- Las clases asignadas se cargarán dinámicamente -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Sección de Subir Tareas -->
+            <section class="dashboard-section" id="subir-tareas" style="display: none;">
+                <h2>Subir Tareas</h2>
+                <div class="card">
+                    <form id="upload-assignment-form" enctype="multipart/form-data">
+                        <label for="class-select">Seleccionar Clase:</label>
+                        <select id="class-select" required>
+                            <option value="">Seleccione una clase...</option>
+                        </select>
+
+                        <label for="assignment-title">Título de la Tarea:</label>
+                        <input type="text" id="assignment-title" placeholder="Título de la Tarea" required>
+
+                        <label for="assignment-description">Descripción:</label>
+                        <textarea id="assignment-description" placeholder="Descripción de la Tarea" required></textarea>
+
+                        <label for="due-date">Fecha de Entrega:</label>
+                        <input type="date" id="due-date" required>
+
+                        <!-- Campo para subir archivos -->
+                        <label for="assignment-file">Subir Archivo (Imagen, Video, Documento):</label>
+                        <input type="file" id="assignment-file" name="assignment-file" accept=".jpg, .jpeg, .png, .gif, .mp4, .mov, .avi, .pdf, .doc, .docx, .xls, .xlsx" multiple>
+
+                        <button type="submit">Subir Tarea</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Sección de Estudiantes Asignados -->
+            <section class="dashboard-section" id="estudiantes" style="display: none;">
+                <h2>Estudiantes Asignados</h2>
+                <div class="card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Matrícula</th>
+                                <th>Nombre</th>
+                                <th>Correo Electrónico</th>
+                                <th>Clase</th>
+                            </tr>
+                        </thead>
+                        <tbody id="estudiantes-asignados">
+                            <!-- Lista de estudiantes se llenará dinámicamente -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Sección de Configuración -->
+            <section class="dashboard-section" id="configuracion" style="display: none;">
+                <h2>Configuración</h2>
+                <div class="card">
+                    <!-- Aquí irán los ajustes de configuración -->
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="teacher.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* ImprimirNotas.css */
+.imprimir-notas-container {
+    padding: 20px;
+    max-width: 800px; /* Ajusta el ancho máximo del contenedor */
+    margin: auto; /* Centra el contenedor */
+}
+
+@media print {
+    .btn-imprimir {
+        display: none; /* Oculta el botón al imprimir */
+    }
+    .scrollable-content {
+        max-height: none; /* Asegura que el contenido se muestre completo */
+        overflow-y: visible; /* No se necesita scroll */
+    }
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.estudiantes-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.estudiante-item {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notas-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.notas-table th,
+.notas-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.promedio-general {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.imprimir-diseno {
+    margin-top: 20px;
+}
+
+.logo-colegio {
+    width: 100px; /* Ajusta el tamaño del logo */
+    margin-bottom: 10px;
+}
+
+.firmas-sellos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.firma {
+    text-align: center;
+}
+
+.sello {
+    width: 100px; /* Ajusta el tamaño del sello */
+    height: 50px; /* Ajusta el tamaño del sello */
+    border: 1px solid black; /* Simula un sello */
+    margin: 10px auto;
+}
+
+/* Estilo para el contenedor con scroll */
+.scroll-container {
+    max-height: 400px; /* Altura máxima para el área scrollable */
+    overflow-y: auto; /* Habilita el scroll vertical */
+    border: 1px solid #ccc; /* Opcional: agrega un borde */
+    padding: 10px; /* Opcional: agrega padding */
+    margin-bottom: 20px; /* Espaciado inferior */
+}

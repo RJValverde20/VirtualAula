@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="administrar-estudiantes.css">
+    <title>Administrar Estudiantes</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Panel de navegación -->
+        <nav class="sidebar">
+            <h2>Aula Virtual - Administrador</h2>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="matricular-estudiantes.html">Matricular Estudiantes</a></li>
+                <li><a href="administrar-estudiantes.html">Administrar Estudiantes</a></li>
+                <li><a href="ver-notas.html">Ver Notas</a></li>
+                <li><a href="imprimir-notas.html">Imprimir Notas</a></li>
+                <li><a href="configuracion.html">Configuración</a></li>
+                <li><button id="logout-button">Cerrar sesión</button></li>
+            </ul>
+        </nav>
+
+        <!-- Contenido Principal -->
+        <div class="main-content">
+            <h1>Administrar Estudiantes</h1>
+            
+            <!-- Formulario para buscar estudiante -->
+            <div class="search-form">
+                <form id="search-form">
+                    <input type="text" id="search-query" placeholder="Nombre o Carnet del Estudiante" required>
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+
+            <!-- Sección para mostrar y editar los detalles del estudiante -->
+            <div id="student-details" class="student-details" style="display:none;">
+                <h2>Detalles del Estudiante</h2>
+                <form id="student-form">
+                    <div class="student-info">
+                        <img id="student-photo" src="" alt="Foto del Estudiante">
+                        <div class="info-text">
+                            <label for="student-name">Nombre:</label>
+                            <input type="text" id="student-name">
+
+                            <label for="student-grade">Grado:</label>
+                            <input type="text" id="student-grade">
+
+                            <label for="student-pin">PIN:</label>
+                            <input type="text" id="student-pin" readonly>
+
+                            <label for="student-carnet">Carnet:</label>
+                            <input type="text" id="student-carnet" readonly>
+
+                            <label for="student-access">Accesos:</label>
+                            <input type="text" id="student-access">
+
+                            <button type="button" id="recover-pin-carnet">Recuperar PIN/Carnet</button>
+                        </div>
+                    </div>
+
+                    <button type="submit">Guardar Cambios</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="administrar-estudiantes.js"></script>
+</body>
+</html>

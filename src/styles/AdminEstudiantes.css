@@ -1,0 +1,188 @@
+body {
+  background-color: #f0f4f8;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Cambiado a flex-start para que el contenido empiece desde la parte superior */
+  min-height: 100vh;
+  overflow: hidden; /* Oculta las barras de desplazamiento del body */
+}
+
+.admin-estudiantes-container {
+  padding: 18px;
+  width: 103vw; /* Ancho completo de la ventana */
+  height: 104vh; /* Altura completa de la ventana */
+  background-color: #fff; /* Fondo blanco */
+  margin: 0; /* Sin margen */
+  overflow-y: auto; /* Habilitar el scroll vertical en esta área */
+}
+
+h1 {
+  font-size: 3em; /* Aumentado para que sea más grande */
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px; /* Reducido para que esté más cerca del siguiente elemento */
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #ff6b6b;
+  margin-bottom: 15px; /* Reducido para que esté más cerca del siguiente elemento */
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px; /* Mantener el margen */
+}
+
+.student-details,
+.estudiantes-list {
+  margin-top: 20px; /* Reducido para que estén más cerca del título */
+}
+
+.student-details {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-details p {
+  font-size: 1.2em;
+  color: #555;
+  margin: 10px 0;
+}
+
+.edit-form label {
+  display: block;
+  margin-bottom: 10px; /* Reducido para que esté más cerca del campo */
+  font-size: 1.1em;
+  color: #333;
+}
+
+.edit-form input[type="text"],
+.edit-form input[type="email"],
+.edit-form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.edit-form input[type="file"] {
+  margin-top: 10px;
+}
+
+.profile-pic {
+  margin: 20px 0;
+}
+
+.circular-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.estudiantes-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Sin margen para evitar el desbordamiento */
+}
+
+.estudiantes-list ul li {
+  margin-bottom: 10px; /* Reducido para que esté más cerca del siguiente elemento */
+}
+
+.estudiantes-list ul li button {
+  background-color: #00bfa5;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.estudiantes-list ul li button:hover {
+  background-color: #ff6b6b;
+}
+
+button {
+  background-color: #00bfa5;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff6b6b;
+}
+
+/* Estilos para el botón de edición */
+button.edit-button {
+  background-color: #ff6b6b; /* Color diferente para el botón de edición */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button.edit-button:hover {
+  background-color: #e63946; /* Color de hover */
+}
+
+/* Nuevo estilo para el mensaje de éxito */
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: opacity 0.5s ease; /* Transición suave */
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (max-width: 768px) {
+  .admin-estudiantes-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2.5em; /* Ajuste para pantallas pequeñas */
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .edit-form input[type="text"],
+  .edit-form input[type="email"],
+  .edit-form select {
+    font-size: 0.9em;
+  }
+
+  .profile-pic {
+    margin: 15px 0;
+  }
+}

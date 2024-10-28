@@ -1,0 +1,174 @@
+/* Estilos generales para el panel de administración */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f2f5;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #00274d; /* Azul marino */
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a, .sidebar ul li button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sidebar ul li a:hover, .sidebar ul li button:hover {
+    background-color: #004080; /* Azul más oscuro */
+}
+
+.sidebar ul li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.main-content {
+    margin-left: 370px; /* Aumenta el margen para desplazar el contenido */
+    padding: 20px;
+    overflow-y: auto;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #00274d; /* Azul marino */
+}
+
+.search-form {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.search-form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 60%;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #003366; /* Azul marino oscuro */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #002244; /* Azul más oscuro */
+}
+
+.student-details {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.student-info img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.info-text {
+    flex-grow: 1;
+}
+
+.info-text label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #003366; /* Azul marino oscuro */
+}
+
+.info-text input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+button[type="button"] {
+    background-color: #ff5722; /* Naranja para recuperar */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="button"]:hover {
+    background-color: #e64a19; /* Naranja más oscuro */
+}
+
+button[type="submit"] {
+    background-color: #00796b; /* Verde para guardar */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #004d40; /* Verde más oscuro */
+}

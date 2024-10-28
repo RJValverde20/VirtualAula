@@ -1,0 +1,103 @@
+/* src/styles/AdminDashboard.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2e3b4e; /* Fondo oscuro */
+  padding: 20px;
+  color: white;
+  position: fixed;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a,
+.sidebar ul li button {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li button:hover {
+  background-color: #3e5060;
+}
+
+.main-content {
+  margin-left: 250px; /* Espacio para el sidebar fijo */
+  padding: 40px;
+  flex-grow: 1;
+  overflow-y: auto;
+  background-color: #f0f2f5;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: #d6204e; /* Color para los íconos */
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-description {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+#logout-button {
+  margin-top: 20px;
+  background-color: #d6204e;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#logout-button:hover {
+  background-color: #a8143a;
+}

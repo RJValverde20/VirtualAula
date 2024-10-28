@@ -1,0 +1,181 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+/* Estilo del Panel de Navegación */
+.sidebar {
+    width: 220px;
+    background-color: #2C3E50;
+    color: #fff;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(187, 45, 45, 0.993);
+}
+
+.sidebar h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sidebar ul li:hover {
+    background-color: #34495e;
+}
+
+/* Estilo específico para el botón de cerrar sesión */
+.sidebar ul li button#logout-button {
+    background-color: #e74d3c00; /* Rojo para destacar el botón de cerrar sesión */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.sidebar ul li button#logout-button:hover {
+    background-color: #C0392B;
+}
+
+/* Estilo para los botones en la configuración */
+.settings-card button {
+    padding: 10px 15px;
+    background-color: #edf0f1; /* Azul para los botones de configuración */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.settings-card button:hover {
+    background-color: #2980B9;
+}
+
+/* Contenido Principal */
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.dashboard-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card .icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.card p {
+    color: #555;
+}
+
+/* Sección de Configuración */
+.settings-section {
+    margin-top: 20px;
+}
+
+.settings-container {
+    display: flex;
+    gap: 20px;
+}
+
+.settings-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.settings-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.settings-card h3 {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.settings-card label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 400;
+}
+
+.settings-card input[type="text"],
+.settings-card input[type="email"],
+.settings-card input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #a14c4c;
+    border-radius: 5px;
+}
+
+.settings-card input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.settings-card button {
+    padding: 10px 15px;
+    background-color: #ecf0f3; /* Azul para los botones en el formulario de configuración */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.settings-card button:hover {
+    background-color: #2980B9;
+}
